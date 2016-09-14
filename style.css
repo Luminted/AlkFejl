@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+p + p{
+    font-weight: bold;
+    position: absolute;
+    left: 100px;
+}
+
+p span{
+    color: red;
+    font-size: 20px;
+}
