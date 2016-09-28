@@ -1,8 +1,8 @@
 {% extends 'master.njk' %}
 
 {% block content %}
-Te {{ count }} almát kértél
-<form action="/alma/oldala">
+ <div>Te {{ count }} almát kértél</div>
+<form action="/alma/oldala" method="POST">
     <input type="text" name="count" placeholder="hány alma?">
     <button type="submit">Küldés</button>
 </form>

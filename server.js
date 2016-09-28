@@ -5,6 +5,7 @@
 
 var express = require('express');
 var nunjucks = require('nunjucks');
+var bodyParser = require('body-parser');
 var app = express();
 
 
@@ -23,6 +24,7 @@ app.use(function(req,res, next){
 //statikus kérés
 app.use(express.static('public'));
 
+app.use(bodyParser.urlencoded({ extended: false }));
 
 //nunjucks template használata
 app.get('/hello/:name', function(req,res){
